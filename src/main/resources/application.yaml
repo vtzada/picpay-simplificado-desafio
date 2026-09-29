@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: picpay
+  datasource:
+    url: jdbc:postgresql://localhost:5432/picpay_db
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
